@@ -1,0 +1,26 @@
+server:
+  port: 8586
+spring:
+  main:
+    banner-mode: off
+  application:
+    name: an_tg_bot
+  task:
+    scheduling:
+      pool:
+        size: 50
+  jpa:
+    database-platform: org.hibernate.community.dialect.SQLiteDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+  datasource:
+    driver-class-name: org.sqlite.JDBC
+    username: sa
+    password: sa
+    url: 'jdbc:sqlite:bot_sqlite.db'
+    #url: 'jdbc:sqlite:memory:myDb?cache=shared'
+tg:
+  api-id: 1111
+  api-key: 1111
+  phone: +1111
